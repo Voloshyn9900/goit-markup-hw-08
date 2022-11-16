@@ -1,0 +1,34 @@
+//------------------------------------------------------Base----------------------------
+
+@import './base/normalize';
+
+// ------------------------------------------------------components-----------------------------
+
+// -----------------------------------------------------modal-window
+
+@import './components/Modal-window/modal-window';
+@import "./components/Modal-window/mobile-modal-window";
+
+//----------------Pages 1
+
+@import './components/Header/header';
+@import './components/Pages_1/hero';
+@import './components/Pages_1/features';
+@import './components/Pages_1/we-do-work';
+@import './components/Pages_1/team';
+@import './components/Pages_1/customers';
+
+//----------------Pages 2
+@import './components/Pages_2/list-btn';
+@import './components/Pages_2/portfolio';
+
+//----------------footer
+
+@import './components/Footer/footer';
+@import './components/Footer/social-networks';
+@import './components/Footer/SUBSCRIBE';
+
+//-------------------------------------------------------- utils--------------------------------
+
+@import './utils/variabile';
+@import './utils/mixin';

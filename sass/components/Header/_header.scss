@@ -1,0 +1,160 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.main__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  display: block;
+  font-family: var(--raleway);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--main-order-service);
+  text-decoration: none;
+
+  @media screen and(min-width:480px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @media screen and(min-width:768px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @media screen and(min-width:1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.header__studio {
+  font-family: var(--raleway);
+  color: #000000;
+}
+
+.header__list {
+  list-style-type: none;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  // margin-left: 93px;
+
+  @media screen and(min-width:320px) {
+    display: none;
+  }
+
+  @media screen and(min-width:480px) {
+    display: none;
+  }
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    margin-left: 88px;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    margin-left: 93px;
+  }
+}
+
+.header__list .header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header__link {
+  color: var(--main-link-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  transition: color var(--cubic), var(--transition-timing);
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.current {
+  color: #2196f3;
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+
+    left: 0;
+    bottom: 0px;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196f3;
+    
+  }
+}
+
+.header__contact {
+  display: flex;
+  margin-left: auto;
+
+  @media screen and(min-width:320px) {
+    display: none;
+  }
+
+  @media screen and(min-width:480px) {
+    display: none;
+  }
+
+  @media screen and(min-width:768px) {
+    max-height: 80px;
+    display: block;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
+}
+
+.header__img--logo {
+  margin-right: 10px;
+}
+
+.header__mail,
+.header__tel {
+  height: 14px;
+  color: var(--main-text-color);
+}
+
+.header__contact .header__contact--link:not(:last-child) {
+
+  @media screen and(min-width:768px) {
+    height: 14px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    margin-right: 50px;
+  }
+}
