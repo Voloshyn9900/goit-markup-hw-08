@@ -1,0 +1,140 @@
+/////////////////// от 0px до 768px ////////////////////
+
+.benefits {}
+
+.container {}
+
+.visually-hidden {}
+
+.benefits__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+.benefits__item {
+    width: 100%;
+    
+}
+
+.benefits__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $color-command-background;
+
+}
+
+.benefits__icon {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.benefits__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    text-align: center;
+
+}
+
+.benefits__text {
+    color: $gray-color-p;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+}
+
+/////////////////// от 768px ////////////////////
+
+@media screen and (min-width:768px) {
+
+    .benefits {}
+
+    .container {}
+
+    .visually-hidden {}
+
+    .benefits__list {
+        flex-wrap: wrap;
+
+    }
+
+    .benefits__item {
+        width: calc((100% - 30px) / 2);
+
+    }
+
+    .benefits__div {
+       
+    }
+
+    .benefits__icon {
+        
+
+    }
+
+    .benefits__title {
+        text-align: start;
+
+    }
+
+    .benefits__text {
+        
+
+    }
+}
+
+/////////////////// от 1200px ////////////////////
+
+@media screen and (min-width:1200px) {
+    .benefits {}
+
+    .container {}
+
+    .visually-hidden {}
+
+    .benefits__list {
+        flex-wrap: nowrap;
+
+    }
+
+    .benefits__item {
+        width: calc((100% - 30px) / 4);
+
+    }
+
+    .benefits__div {
+       
+    }
+
+    .benefits__icon {
+        
+
+    }
+
+    .benefits__title {
+        text-align: start;
+
+    }
+
+    .benefits__text {
+        
+
+    }
+}
+

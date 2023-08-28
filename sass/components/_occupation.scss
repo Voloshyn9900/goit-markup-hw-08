@@ -1,0 +1,48 @@
+.occupation{
+    display: none;
+}
+
+
+
+@media screen and (min-width:1200px) {
+    
+    .occupation {
+        display: flex;
+        padding-top: 0px;
+    }
+    
+    .container {}
+    
+    .occupation__title {
+    
+    }
+    
+    .occupation__list {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .occupation__item {
+        position: relative;
+    
+    }
+    
+    .overlay__text {
+        position: absolute;
+        bottom: 0;
+        
+        width: 370px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        align-items: center;
+        background-color: $color-header-footer-80p;
+    
+        color: $color-white;
+        font-weight: 700;
+        line-height: 1.14;
+    
+    }
+
+}

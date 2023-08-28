@@ -1,0 +1,129 @@
+.offer__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.offer__item {
+    width: 100%;
+}
+
+.offer__link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 1px solid #EEEEEE;
+
+
+    &:focus,
+    &:hover {
+        box-shadow: 12px 16px 22px -11px rgba(39, 52, 62, 0.5);
+    }
+
+}
+
+.img__card{
+    width: 100%;
+}
+
+.offer__animation {
+    position: relative;
+    overflow: hidden;
+    // width: 100%;
+}
+
+.offer__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+
+    padding: 63px 24px;
+
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: $color-overlay-blue-90pr;
+
+    .offer__link:focus &,
+    .offer__link:hover & {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+
+
+
+}
+
+.text__animation {
+    font-size: 18px;
+    line-height: 1.56;
+    color: $color-white;
+
+}
+
+.offer__div {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+
+    border: 1px solid var(--color-border-EEEEEE);
+    border-top: none;
+
+}
+
+.offer__title {
+    margin-bottom: 4px;
+
+    color: $color-black-21;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+}
+
+.offer__text {
+    color: $gray-color-p;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+
+}
+
+/////////////////// от 768px ////////////////////
+
+@media screen and (min-width:768px) {
+    .offer__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+    }
+
+    .offer__item {
+        width: calc((100% - 30px) / 2);
+    }
+
+}
+
+/////////////////// от 1200px ////////////////////
+
+@media screen and (min-width:1200px) {
+
+    .offer__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    
+    }
+
+    .offer__item {
+        width: 370px;
+    }
+
+}
